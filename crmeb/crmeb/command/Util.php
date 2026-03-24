@@ -145,7 +145,7 @@ class Util extends Command
         ];
 
         // 执行 SQL 语句
-        return $this->transaction(function () use ($sql) {
+        return Db::transaction(function () use ($sql) {
             try {
                 foreach ($sql as $item) {
                     Db::execute($item);

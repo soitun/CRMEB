@@ -856,7 +856,7 @@ class PublicController
         ], true);
         $themeInfo = app()->make(ThemeServices::class)->getThemeInfo($theme_id, $type);
 
-        if ($type != 'category' && $themeInfo) {
+        if (in_array($type, ['home', 'detail', 'user']) && $themeInfo) {
             foreach ($themeInfo['value'] as &$userDataItem) {
                 if ($userDataItem['name'] == 'customerService') {
                     $userDataItem['routine_contact_type'] = (int)sys_config('routine_contact_type');
