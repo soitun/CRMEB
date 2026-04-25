@@ -296,14 +296,4 @@ docker-compose一键部署：https://doc.crmeb.com/single_open/open_v54/20145
 
 ---
 
-###  📕 CRMEB PRO版
-<a href="https://www.crmeb.com/index/pro?from=githubphp" target="_blank"><img width="3840" height="1600" alt="PRO版2" src="https://github.com/user-attachments/assets/6dc55f27-1e15-4718-9979-6c52a2d2ffb8" />
-
-
-
-
-
-###  📕 CRMEB 多商户版
-
-[![输入图片说明](help/resource/pic/duoshanghu2.jpg)](https://www.crmeb.com/index/merchant?from=githubphp)
 
