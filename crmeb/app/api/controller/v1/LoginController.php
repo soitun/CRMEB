@@ -482,6 +482,10 @@ class LoginController
                 CacheService::delete('code_' . $phone);
                 return app('json')->fail('验证码错误');
             }
+        } else {
+            if (!$openId) {
+                return app('json')->fail('参数错误');
+            }
         }
         if ($email == '') $email = substr(md5($openId), 0, 12);
         $userInfo = [
